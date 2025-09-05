@@ -7,12 +7,20 @@
   font-family: "Oswald", sans-serif;
 }
 
+.container {
+  padding: 50px 0;
+}
+
 .row {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
+.yellow {
+  color: #e6cc16;
+}
 /* LANDING PAGE*/
 #landing-page {
   height: 100vh;
@@ -146,6 +154,8 @@ header {
   margin-right: auto;
   position: relative;
   transition: all ease 300ms;
+  text-decoration: none;
+  color: black;
 }
 
 .about__me:hover {
@@ -182,7 +192,6 @@ header {
   top: 50%;
   transform: translate(-50%, -50%) scale(1); /* center + default scale */
   font-size: 2.5rem;
-  color: #e6cc16;
   transition: opacity 300ms ease, transform 300ms ease;
 }
 
@@ -209,4 +218,53 @@ header {
 
 .envelope__wrapper:active .fa-envelope-open {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* PROJECTS */
+#projects {
+  background-color: rgba(224, 228, 0, 1);
+}
+
+.section__title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  width: calc(100% / 4);
+  list-style: none;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.project__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project__description {
+  width: 80%;
+}
+
+.project__description--title {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
