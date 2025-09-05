@@ -118,8 +118,9 @@ header {
   margin-top: 20px;
 }
 
-.header__content > p {
-  font-size: 1.3rem;
+.header__content > .about__text {
+  width: 92%;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-top: 15px;
   line-height: 1.8;
@@ -129,4 +130,83 @@ header {
   width: 37%;
   transform: scale(0.6);
   transform-origin: top left;
+}
+
+.aboutme__mail {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.about__me {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: all ease 300ms;
+}
+
+.about__me:hover {
+  cursor: pointer;
+  background-color: #e6cc16;
+}
+
+.fa-sort-down {
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  transition: all ease 300ms;
+}
+
+.about__me:hover .fa-sort-down {
+  color: #e6cc16;
+  transform: translate(-50%, 70%);
+}
+
+.envelope__wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 300ms;
+  cursor: pointer;
+  background-color: black;
+}
+
+.envelope__wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1); /* center + default scale */
+  font-size: 2.5rem;
+  color: #e6cc16;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+/* initial state */
+.envelope__wrapper .fa-envelope {
+  opacity: 1;
+}
+
+.envelope__wrapper .fa-envelope-open {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* hover state */
+.envelope__wrapper:hover .fa-envelope {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.envelope__wrapper:hover .fa-envelope-open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.envelope__wrapper:active .fa-envelope-open {
+  transform: translate(-50%, -50%) scale(0.9);
 }
