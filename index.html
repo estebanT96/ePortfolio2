@@ -100,6 +100,48 @@
             <img src="./assets/pp.PNG" alt="Profile picture" />
           </div>
         </div>
+        <div class="modal">
+          <div class="modal__half modal__about">
+            <h2>About Me</h2>
+            <p>
+              I'm a 29-year-old
+              <span style="color: #008f11">biologist </span> and
+              <span style="color: rgba(85, 55, 255, 1)"
+                >computer systems engineer</span
+              >
+              who bridges the worlds of life sciences and technology. I develop
+              applications that bring clarity to data and empower users with
+              intuitive tools. <br />With experience in smart farming, satellite
+              imagery analysis, and biological data analytics, I'm passionate
+              about applying modern software development to challenges across
+              agriculture, ecology, and the life sciences to create impactful
+              contributions to society.
+            </p>
+          </div>
+          <div class="modal__half modal__contact">
+            <h2>Let's have a chat</h2>
+            <form class="modal__contact--form">
+              <div class="form__item">
+                <label class="form__item--label"><span class="yellow">* </span>Name</label>
+                <input class="input" name="user_name" type="text" required />
+              </div>
+              <div class="form__item">
+                <label class="form__item--label"><span class="yellow">* </span>E-mail</label>
+                <input class="input" name="user_email" type="text" required />
+              </div>
+              <div class="form__item">
+                <label class="form__item--label"><span class="yellow">* </span>Message</label>
+                <textarea
+                  class="input"
+                  name="message"
+                  type="text"
+                  required
+                ></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">Send it my way</button>
+            </form>
+          </div>
+        </div>
       </header>
     </section>
     <section id="projects">
@@ -224,6 +266,129 @@
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section id="jobs">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">Companies I have worked at</h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Cuprosa</h3>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Universidad de Sonora
+                  </h3>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Morning Star</h3>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Encora</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__container">
+            <div class="footer__logo">
+              <figure>
+                <svg
+                  class="personal-logo"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <text
+                    class="personal-logo--text"
+                    x="50%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-size="35"
+                    font-weight="bold"
+                    fill="white"
+                    letter-spacing="1"
+                  >
+                    ET
+                  </text>
+                </svg>
+              </figure>
+            </div>
+            <ul class="footer__links">
+              <li>
+                <a
+                  href="https://github.com/estebanT96"
+                  target="_blank"
+                  class="footer__link link__hover-effect"
+                  >GITHUB</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/esteban-tapia-ortiz/"
+                  target="_blank"
+                  class="footer__link link__hover-effect"
+                  >LINKEDIN</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link link__hover-effect">EMAIL</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link link__hover-effect">RESUME</a>
+              </li>
+            </ul>
+            <div class="footer__copyright">
+              <p>© 2024 by Esteban Tapia. All rights reserved.</p>
+            </div>
+            <div class="envelope__wrapper">
+              <i class="fa-solid fa-envelope" style="color: #e6cc16"></i>
+              <i class="fa-solid fa-envelope-open" style="color: #e6cc16"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
