@@ -122,15 +122,21 @@
             <h2>Let's have a chat</h2>
             <form class="modal__contact--form">
               <div class="form__item">
-                <label class="form__item--label"><span class="yellow">* </span>Name</label>
+                <label class="form__item--label"
+                  ><span class="yellow">* </span>Name</label
+                >
                 <input class="input" name="user_name" type="text" required />
               </div>
               <div class="form__item">
-                <label class="form__item--label"><span class="yellow">* </span>E-mail</label>
+                <label class="form__item--label"
+                  ><span class="yellow">* </span>E-mail</label
+                >
                 <input class="input" name="user_email" type="text" required />
               </div>
               <div class="form__item">
-                <label class="form__item--label"><span class="yellow">* </span>Message</label>
+                <label class="form__item--label"
+                  ><span class="yellow">* </span>Message</label
+                >
                 <textarea
                   class="input"
                   name="message"
@@ -138,8 +144,19 @@
                   required
                 ></textarea>
               </div>
-              <button id="contact__submit" class="form__submit">Send it my way</button>
+              <button id="contact__submit" class="form__submit">
+                Send it my way
+              </button>
             </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fa-solid fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+              Thank you for the message. I look forward to speaking with you!
+            </div>
+            <div class="exit__modal">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
           </div>
         </div>
       </header>
