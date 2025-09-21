@@ -74,7 +74,7 @@
                 CONTACT
               </a>
             </li>
-            <li class="dark__mode--toggle">
+            <li class="dark__mode--toggle" onclick="toggleDarkMode()">
               <i class="fa-solid fa-circle-half-stroke"></i>
             </li>
           </ul>
@@ -102,7 +102,7 @@
                 >Here's a bit more about me.
                 <i class="fa-solid fa-sort-down"></i>
               </a>
-              <div class="envelope__wrapper">
+              <div class="envelope__wrapper" onclick="toggleModal()">
                 <i class="fa-solid fa-envelope" style="color: #e6cc16"></i>
                 <i class="fa-solid fa-envelope-open" style="color: #e6cc16"></i>
               </div>
@@ -166,7 +166,7 @@
             <div class="modal__overlay modal__overlay--success">
               Thank you for the message. I look forward to speaking with you!
             </div>
-            <div class="exit__modal">
+            <div class="exit__modal" onclick="closeModal()">
               <i class="fa-solid fa-xmark"></i>
             </div>
           </div>
@@ -413,7 +413,7 @@
             <div class="footer__copyright">
               <p>© 2024 by Esteban Tapia. All rights reserved.</p>
             </div>
-            <div class="envelope__wrapper">
+            <div class="envelope__wrapper" onclick="toggleModal()">
               <i class="fa-solid fa-envelope" style="color: #e6cc16"></i>
               <i class="fa-solid fa-envelope-open" style="color: #e6cc16"></i>
             </div>
