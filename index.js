@@ -2,7 +2,6 @@
 let contrastToggle = false;
 
 function toggleDarkMode() {
-  console.log("toggledarkmode");
   contrastToggle = !contrastToggle;
   contrastToggle
     ? document.body.classList.add("dark-theme")
