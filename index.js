@@ -31,8 +31,8 @@ function contact(e) {
   const successOverlay = contactPanel.querySelector(".modal__overlay--success");
 
   contactPanel.querySelector(".modal__contact > h2")?.classList.add("hidden");
-  form.classList.add("hidden"); // 👈 hide immediately
-  loadingOverlay?.classList.add("modal__overlay--visible"); // optional spinner
+  form.classList.add("hidden"); //
+  loadingOverlay?.classList.add("modal__overlay--visible"); 
 
   emailjs
     .sendForm("service_yvoiprl", "template_8wha25g", form, "bwMxs_krtLUXvQYwF")
@@ -52,7 +52,7 @@ function contact(e) {
 
 const toggleModal = () => {
   document.body.classList.add("modal--open");
-  // reset state every time you open
+
   const m = document.querySelector(".modal__contact");
   m.querySelector(".modal__contact--form")?.classList.remove("hidden");
   m.querySelector("h2")?.classList.remove("hidden");

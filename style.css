@@ -33,7 +33,9 @@ header,
 }
 
 .modal--open nav,
-.modal--open #projects {
+.modal--open #jobs,
+.modal--open #projects,
+.modal--open #footer {
   filter: blur(3px);
   transition: all 300ms ease;
 }
@@ -568,6 +570,36 @@ textarea {
   width: 80%;
 }
 
+#jobs .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.job__title {
+  text-align: center;
+}
+
+.job__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.job {
+  width: calc(80% / 2);
+  padding: 40px;
+}
+
+.job__wrapper {
+  width: 100%;
+}
+
+.job__wrapper > img {
+  width: 100%;
+}
+
 .project__description--title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -650,14 +682,111 @@ textarea {
   left: 55vw;
 }
 .shape--7 {
-  top: 25vh;
+  top: 55vh;
   left: 5vw;
 }
 .shape--8 {
-  top: 35vh;
+  top: 65vh;
   left: 5vw;
 }
 .shape--9 {
-  top: 35vh;
+  top: 40vh;
   left: 5vw;
+}
+
+@media (max-width: 786px) {
+  .header__content > .title {
+    font-size: 3rem;
+  }
+
+  .header__content > .about__text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .about__me {
+    font-size: 1.3rem;
+  }
+
+  .aboutme__mail {
+    width: 100%;
+  }
+
+  .aboutme__mail > .about__me {
+    width: 100%;
+    text-align: left;
+  }
+
+  .aboutme__mail > .envelope__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal {
+    width: 75%;
+  }
+
+  .modal__about > h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal__about > p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .modal__contact > h2 {
+    font-size: 1.5rem;
+  }
+
+  .form__submit {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  #projects > .container > .row > .project__list {
+    flex-direction: column;
+  }
+
+  #projects > .container > .row > .project__list > .project {
+    width: 80%;
+  }
+
+  #jobs > .container > .row > .jobs__list {
+    width: calc(100% / 2);
+  }
+
+  #jobs > .container > .row > .jobs__list > .job {
+    width: 80%;
+  }
+
+  .job__list {
+    margin-top: 40px;
+  }
+
+  .job {
+    width: calc(80% / 2);
+    padding: 20px;
+  }
+
+  #footer .footer__container {
+    width: 100%;
+  }
+
+  .footer__links li {
+    font-size: 1.8rem;
+    margin: 0 30px;
+  }
+
+  #footer .envelope__wrapper {
+    visibility: hidden;
+  }
+
+  .shape {
+    visibility: hidden;
+  }
 }
